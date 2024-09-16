@@ -718,8 +718,9 @@ GameObject:
   - component: {fileID: 498301997}
   - component: {fileID: 498301996}
   - component: {fileID: 498301995}
+  - component: {fileID: 498301999}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Dropper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,6 +812,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498301999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498301994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e99275f7c635a49a3a5e4403a80d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWait: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
