@@ -773,7 +773,7 @@ Transform:
   m_GameObject: {fileID: 259658587}
   serializedVersion: 2
   m_LocalRotation: {x: 0.41773748, y: -0.0033197915, z: -0.012231069, w: 0.90847945}
-  m_LocalPosition: {x: -8.397493, y: 7.589306, z: -11.759687}
+  m_LocalPosition: {x: -6.0474935, y: 8.099307, z: -11.759688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -915,7 +915,7 @@ Transform:
   m_GameObject: {fileID: 307376269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1843076, y: -8.87056, z: 6.7724247}
+  m_LocalPosition: {x: 4.1843076, y: -8.95, z: 6.7724247}
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1649,7 +1649,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.41773748, y: -0.0033197915, z: -0.012231069, w: 0.90847945}
-  m_LocalPosition: {x: -8.397493, y: 7.589306, z: -11.759687}
+  m_LocalPosition: {x: -6.0474935, y: 8.099307, z: -11.759688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2938,7 +2938,7 @@ GameObject:
   - component: {fileID: 1959535560}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3298,11 +3298,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1878708575898545004, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.46
+      value: -5.11
       objectReference: {fileID: 0}
     - target: {fileID: 1878708575898545004, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 1878708575898545004, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3339,6 +3339,14 @@ PrefabInstance:
     - target: {fileID: 7257045382013432218, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
       propertyPath: m_Name
       value: Dodgy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360535925296624864, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
+      propertyPath: jumpForce
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360535925296624864, guid: 741a8ace1f310e5408353ef34037c6ff, type: 3}
+      propertyPath: jumpHeight
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
