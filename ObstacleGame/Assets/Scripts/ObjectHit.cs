@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
-    public int scoreIncrease = 10; // Amount to increase score by
+    public int scoreIncrease = 10;  // Amount to increase score
+    public int scoreDecrease = 5;   // Amount to decrease score when hit
 
     private void OnCollisionEnter(Collision other)
     {
@@ -13,11 +14,12 @@ public class ObjectHit : MonoBehaviour
             GetComponent<MeshRenderer>().material.color = Color.red;
             gameObject.tag = "Hit";
 
-            // Access the GameManager and increase the score
+            // Access the GameManager
             GameManager gameManager = FindObjectOfType<GameManager>();
             if (gameManager != null)
             {
-                gameManager.IncreaseScore(scoreIncrease);
+                // Decrease score when the player hits the obstacle
+                gameManager.IncreaseScore(-scoreDecrease);  // Decrease score by scoreDecrease
             }
         }
     }

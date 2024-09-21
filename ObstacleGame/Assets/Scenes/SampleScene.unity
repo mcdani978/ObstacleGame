@@ -583,7 +583,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1261829688526752468, guid: b0980b4866ba94a4692d5b39af220456, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588740082}
   m_SourcePrefab: {fileID: 100100000, guid: b0980b4866ba94a4692d5b39af220456, type: 3}
 --- !u!4 &233000554 stripped
 Transform:
@@ -709,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!1 &259658587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!4 &403653067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7201932480019576502, guid: 630949efe72b136419f507a730cedc1d, type: 3}
@@ -1298,6 +1303,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &588740076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1261829688526752468, guid: b0980b4866ba94a4692d5b39af220456, type: 3}
+  m_PrefabInstance: {fileID: 233000553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &588740082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588740076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddc828ec01a8149854cd8c6efa73e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrease: 10
+  detectionDelay: 2
 --- !u!1001 &699299285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1927,6 +1951,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1043073292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4483484728103419009, guid: 63c0a9a6c4664114997e37584ad95525, type: 3}
+  m_PrefabInstance: {fileID: 1181803718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047042285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,16 +2208,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6256778214748545559, guid: 63c0a9a6c4664114997e37584ad95525, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4483484728103419009, guid: 63c0a9a6c4664114997e37584ad95525, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1181803724}
   m_SourcePrefab: {fileID: 100100000, guid: 63c0a9a6c4664114997e37584ad95525, type: 3}
 --- !u!4 &1181803719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084351835478980924, guid: 63c0a9a6c4664114997e37584ad95525, type: 3}
   m_PrefabInstance: {fileID: 1181803718}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1181803724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043073292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddc828ec01a8149854cd8c6efa73e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrease: 10
+  detectionDelay: 2
 --- !u!1001 &1240360244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2347,6 +2397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!65 &1348296107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2686,6 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!1001 &1475241084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2848,6 +2900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!65 &1598272319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3275,6 +3328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreIncrease: 10
+  scoreDecrease: 5
 --- !u!4 &1922735086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 616062862700762906, guid: f4295ba868b07234cb684c3ce29329e9, type: 3}
