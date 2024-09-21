@@ -24,7 +24,7 @@ public class Mover : MonoBehaviour
     void PrintInstruction()
     {
         Debug.Log("Welcome to the game");
-        Debug.Log("Move your player with WASO or arrow keys");
+        Debug.Log("Move your player with WASD or arrow keys");
         Debug.Log("Press Space to jump");
         Debug.Log("Don't hit the walls!");
     }
@@ -75,5 +75,20 @@ public class Mover : MonoBehaviour
 
         transform.position = startPosition; // Ensure the player ends up at the current position
         isJumping = false;
+    }
+
+    public void ApplySpeedBoost(float speedIncrease, float duration)
+    {
+        StartCoroutine(SpeedBoostCoroutine(speedIncrease, duration));
+    }
+
+    private IEnumerator SpeedBoostCoroutine(float speedIncrease, float duration)
+    {
+        float originalSpeed = moveSpeed;
+        moveSpeed *= speedIncrease; // Increase speed
+
+        yield return new WaitForSeconds(duration); // Wait for the duration of the boost
+
+        moveSpeed = originalSpeed; // Reset speed
     }
 }
